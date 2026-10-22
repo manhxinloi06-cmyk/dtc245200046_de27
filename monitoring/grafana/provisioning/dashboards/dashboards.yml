@@ -1,0 +1,10 @@
+apiVersion: 1
+providers:
+  - name: Attendance dashboards
+    orgId: 1
+    folder: Attendance
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards
