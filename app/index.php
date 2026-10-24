@@ -158,7 +158,7 @@ function active(string $current, string $item): string { return $current === $it
 <?php if ($page === 'login' && empty($_SESSION['user'])): ?>
 <main class="login-wrap">
   <section class="login-card">
-    <div class="brand-mark">🎓</div><p class="eyebrow">STUDENT ATTENDANCE SYSTEM</p>
+    <div class="brand-mark">🎓</div><p class="eyebrow"></p>
     <h1>Đăng nhập hệ thống</h1><p class="muted">Hệ thống quản lý điểm danh sinh viên</p>
     <?php if ($error): ?><div class="alert error"><?=e($error)?></div><?php endif; ?>
     <form method="post">
@@ -294,7 +294,7 @@ function active(string $current, string $item): string { return $current === $it
       <div class="page-heading"><div><p class="eyebrow">SECURITY</p><h1>Tài khoản</h1><p class="muted">Cập nhật mật khẩu đăng nhập.</p></div></div>
       <div class="panel account-panel"><h2>Đổi mật khẩu</h2><p class="muted">Mật khẩu tối thiểu 12 ký tự, gồm chữ hoa, chữ thường, số và ký tự đặc biệt.</p><form method="post" class="account-form"><input type="hidden" name="csrf" value="<?=e(csrf_token())?>"><input type="hidden" name="action" value="change_password"><label>Mật khẩu hiện tại<input type="password" name="old_password" required></label><label>Mật khẩu mới<input type="password" name="new_password" minlength="12" required></label><button class="btn primary" type="submit">Cập nhật mật khẩu</button></form></div>
     <?php endif; ?>
-    <footer>Hệ thống Quản lý Điểm danh Sinh viên <span>•</span> Đề tài 27</footer>
+  
   </section>
 </main>
 </div>
